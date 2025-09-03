@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class BlackCoffe : Coffee
+public class BlackCoffee : Coffee
 {
-	public BlackCoffe()
+	public BlackCoffee()
 	{
 		Description = "Black Coffee";
 	}
@@ -14,5 +14,10 @@ public class BlackCoffe : Coffee
 	public override double Cost()
 	{;
 		return 20; 
+	}
+
+	public override string Strength()
+	{
+		return "Strong";
 	}
 }

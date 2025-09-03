@@ -8,7 +8,7 @@ public abstract class Coffee
 {
 	public string Description { get; set; }
 
-	public string 
+	
 	public Coffee()
 	{
 		Description = "Unknown Coffee";
@@ -19,15 +19,10 @@ public abstract class Coffee
 		return 0.0;
 	}
 
-	public abstract string Strength()
+
+	public virtual string Strength()
 	{
-		if (Description == Latte)
-			return "Weak";
-		else if (Description == Cortado)
-			return "Medium";
-		else if (Description == BlackCoffe)
-			return "Strong";
-		else
-			return "Unknown Strength";
+		return "Mild";
 	}
+	
 }
